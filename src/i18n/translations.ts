@@ -9,16 +9,7 @@ export interface Translations {
   copied: string;
   shareWithFriends: string;
   
-  // Navigation / Tabs
-  tabLobby: string;
-  tabSimulator: string;
-  tabStructure: string;
-  tabTypes: string;
-  tabContent: string;
-  tabVercel: string;
-  tabGithub: string;
-
-  // Auth
+  // Auth & Onboarding
   authTitle: string;
   signIn: string;
   signOut: string;
@@ -95,49 +86,41 @@ export interface Translations {
 
 export const translations: Record<Language, Translations> = {
   ar: {
-    appName: 'استوديو النشرة الكوميدية',
-    appTagline: 'لعبة جماعية أونلاين للأصحاب • طور المذيع المتورط + طور السر الكوميدي',
-    liveBadge: 'مباشر • ON AIR',
+    appName: 'Late Show',
+    appTagline: 'استوديو النشرة الكوميدية • لعبة الحفلات الجماعية مع الأصدقاء',
+    liveBadge: 'مباشر • LIVE',
     roomCode: 'كود الاستوديو',
-    copyLink: 'نسخ رابط الغرفة',
+    copyLink: 'نسخ الكود',
     copied: 'تم النسخ!',
     shareWithFriends: 'شارك الكود مع أصحابك للدخول',
 
-    tabLobby: 'الاستوديو (Lobby)',
-    tabSimulator: 'تجربة اللعب',
-    tabStructure: 'هيكل Next.js',
-    tabTypes: 'الـ Types والـ State',
-    tabContent: 'بنك الأسئلة (JSON)',
-    tabVercel: 'حل Vercel Realtime',
-    tabGithub: 'ربط GitHub Repo',
-
-    authTitle: 'الدخول إلى الاستوديو',
+    authTitle: 'الدخول إلى Late Show',
     signIn: 'تسجيل الدخول',
     signOut: 'تسجيل الخروج',
-    playAsGuest: 'دخول سريع كـ زائر (بدون تسجيل)',
+    playAsGuest: 'دخول سريع كـ زائر',
     googleSignIn: 'المتابعة بحساب Google',
     guestNamePlaceholder: 'اكتب اسمك أو لقبك هنا...',
-    selectAvatar: 'اختر شخصيتك في الاستوديو:',
-    continueBtn: 'تأكيد ودخول الاستوديو 🎬',
+    selectAvatar: 'اختر شخصيتك وأفاتارك:',
+    continueBtn: 'دخول الاستوديو 🎬',
     welcomePlayer: 'أهلاً بك يا نجم',
     guestBadge: 'زائر',
     customProfile: 'تعديل البروفايل',
 
     startBroadcastBtn: 'بدء البث المباشر الآن! 🎬',
     createRoomBtn: 'إنشاء استوديو جديد',
-    joinRoomBtn: 'انضمام لاستوديو',
+    joinRoomBtn: 'دخول بكود',
     selectGameMode: 'طور اللعبة المختار',
-    playersConnected: 'طاقم الاستوديو المتواجد',
+    playersConnected: 'طاقم الأصدقاء المتواجد',
     allReady: 'الجميع جاهز للبث!',
-    changeMode: 'تغيير الطور',
+    changeMode: 'تبديل الطور',
     hostBadge: '👑 المشرف',
     youBadge: 'أنت',
     anchorBadge: '🎙️ المذيع',
     spectatorBadge: 'مشاهد',
 
     anchorModeTitle: 'المذيع المتورط',
-    anchorModeDesc: 'مذيع يقرأ نشرة عاجلة من التيليبرومبتر، والأصحاب يقذفون كلمات محرجة ومفاجئة لإفحامه وإضحاكه على الهواء!',
-    anchorModeHighlight: 'تيليبرومبتر حي • كلمات مفاجئة • عداد الضحك',
+    anchorModeDesc: 'اقرأ نشرة عاجلة بجدية تامة من التيليبرومبتر، والأصحاب يقذفون كلمات محرجة ومفاجئة لإفحامك وإضحاكك على الهواء!',
+    anchorModeHighlight: 'تيليبرومبتر حي • كلمات مفاجئة • حساس الضحك',
 
     secretModeTitle: 'السر الكوميدي',
     secretModeDesc: 'سؤال محرج أو موقف غريب، الكل يكتب أروش إجابة سراً، ثم تصويت أعمى بدون معرفة الكاتب لاختيار أضحك رد!',
@@ -166,11 +149,11 @@ export const translations: Record<Language, Translations> = {
 
     podiumTitle: 'نهاية البث • تتويج بطل الضحك',
     winnerDeclared: 'مبروك لنجم الاستوديو! 🎉',
-    backToLobby: 'العودة للوبي واللعب من جديد',
+    backToLobby: 'العودة للوبي ولعب جولة جديدة',
     points: 'نقطة',
 
-    installAppBtn: 'تنزيل اللعبة كـ تطبيق 📲',
-    installAppTitle: 'تثبيت استوديو النشرة على جهازك',
+    installAppBtn: 'تنزيل التطبيق 📲',
+    installAppTitle: 'تثبيت Late Show على جهازك',
     installAppDesc: 'العب في وضع ملء الشاشة بدون أشرطة المتصفح، مع سرعة فائقة وتنبيهات اللعب!',
     iosInstallGuideTitle: 'طريقة التثبيت على الآيفون / الآيباد',
     iosStep1: 'اضغط على زر المشاركة (Share) في شريط سفاري.',
@@ -179,39 +162,31 @@ export const translations: Record<Language, Translations> = {
     offlineBanner: 'أنت في وضع عدم الاتصال حالياً. البيانات المؤقتة قيد الاستخدام.'
   },
   en: {
-    appName: 'Comedy News Studio',
-    appTagline: 'Multiplayer Party Web Game • Caught Anchor + Secret Punchline Modes',
+    appName: 'Late Show',
+    appTagline: 'Comedy News Studio • Multiplayer Party Web Game',
     liveBadge: 'LIVE • ON AIR',
     roomCode: 'Studio Code',
-    copyLink: 'Copy Room Link',
+    copyLink: 'Copy Code',
     copied: 'Copied!',
     shareWithFriends: 'Share code with friends to join',
 
-    tabLobby: 'Studio Lobby',
-    tabSimulator: 'Live Gameplay',
-    tabStructure: 'Next.js Tree',
-    tabTypes: 'Types & State',
-    tabContent: 'Prompt Bank (JSON)',
-    tabVercel: 'Vercel Realtime',
-    tabGithub: 'GitHub Repo Link',
-
-    authTitle: 'Enter Comedy Studio',
+    authTitle: 'Enter Late Show',
     signIn: 'Sign In',
     signOut: 'Sign Out',
-    playAsGuest: 'Quick Guest Play (No Signup)',
+    playAsGuest: 'Quick Guest Play',
     googleSignIn: 'Continue with Google',
     guestNamePlaceholder: 'Enter your nickname...',
-    selectAvatar: 'Choose your studio avatar:',
-    continueBtn: 'Confirm & Enter Studio 🎬',
+    selectAvatar: 'Choose your avatar:',
+    continueBtn: 'Enter Studio 🎬',
     welcomePlayer: 'Welcome, Superstar',
     guestBadge: 'Guest',
     customProfile: 'Edit Profile',
 
     startBroadcastBtn: 'Start Live Broadcast! 🎬',
     createRoomBtn: 'Create Studio Room',
-    joinRoomBtn: 'Join Studio',
+    joinRoomBtn: 'Join with Code',
     selectGameMode: 'Selected Game Mode',
-    playersConnected: 'Connected Studio Cast',
+    playersConnected: 'Friends Cast in Studio',
     allReady: 'Everyone is ready!',
     changeMode: 'Switch Mode',
     hostBadge: '👑 Host',
@@ -220,8 +195,8 @@ export const translations: Record<Language, Translations> = {
     spectatorBadge: 'Audience',
 
     anchorModeTitle: 'Caught Anchor',
-    anchorModeDesc: 'One player reads serious breaking news on a live teleprompter while friends inject hilarious sabotage words in real time!',
-    anchorModeHighlight: 'Live Teleprompter • Sabotage Injections • Laugh Meter',
+    anchorModeDesc: 'Read breaking news seriously on a live teleprompter while friends inject hilarious sabotage words in real time!',
+    anchorModeHighlight: 'Live Teleprompter • Sabotage Injections • Laugh Sensor',
 
     secretModeTitle: 'Comedy Secret',
     secretModeDesc: 'An awkward scenario appears, everyone submits an anonymous punchline, followed by a blind vote for the funniest response!',
@@ -253,8 +228,8 @@ export const translations: Record<Language, Translations> = {
     backToLobby: 'Back to Lobby & Play Again',
     points: 'pts',
 
-    installAppBtn: 'Install App on Mobile 📲',
-    installAppTitle: 'Install Comedy Studio',
+    installAppBtn: 'Install App 📲',
+    installAppTitle: 'Install Late Show',
     installAppDesc: 'Play in fullscreen standalone mode with instant loading and party notifications!',
     iosInstallGuideTitle: 'How to install on iPhone / iPad',
     iosStep1: 'Tap the Share button in the Safari toolbar.',

@@ -1,7 +1,7 @@
 {
   "id": "/",
-  "name": "Comedy News Studio - استوديو النشرة الكوميدية",
-  "short_name": "ComedyStudio",
+  "name": "Late Show - استوديو النشرة الكوميدية",
+  "short_name": "LateShow",
   "description": "لعبة ويب جماعية أونلاين للأصدقاء تضم طوري المذيع المتورط والسر الكوميدي",
   "start_url": "/",
   "scope": "/",
