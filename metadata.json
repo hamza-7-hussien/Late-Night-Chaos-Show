@@ -1,0 +1,7 @@
+{
+  "name": "Comedy News Studio - استوديو النشرة الكوميدية",
+  "description": "لعبة ويب جماعية أونلاين للأصدقاء تضم طوري المذيع المتورط والسر الكوميدي مصممة للعمل على Vercel مع معمارية Realtime.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
